@@ -1,7 +1,8 @@
 // Postmessages component needs to have a capital first letter. [2]
 
 import React, { useEffect, setErrors, setValues, postMessageList } from "react";
-import { TextField, withStyles, Button,  } from "@material-ui/core";
+import { TextField, Button  } from "@mui/material";
+import { withStyles } from "@mui/styles";
 import useForm from "./useForm";
 import { connect } from "react-redux";
 import * as actions from "../actions/postMessage";
@@ -116,4 +117,4 @@ const mapactiontoprops = {
     updatepostmessages : actions.update
 }
 
-export default connect(mapstatetoprops, mapactiontoprops)(withStyles(styles)(PostMessageForm));
+export default connect(mapstatetoprops, mapactiontoprops)(PostMessageForm);

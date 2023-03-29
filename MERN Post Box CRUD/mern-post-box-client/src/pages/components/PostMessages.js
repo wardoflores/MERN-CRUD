@@ -3,7 +3,8 @@
 import { useEffect, useState, Fragment } from "react"; // useEffect, useState for declaring the fetchAll function.
 import { connect } from "react-redux";
 import * as actions from "../actions/postMessage";
-import { Grid, List, ListItem, ListItemText, Paper, Typography, withStyles, Button, Divider } from "@material-ui/core";
+import { Grid, List, ListItem, ListItemText, Paper, Typography, Button, Divider } from "@mui/material";
+import { withStyle } from "@mui/styles";
 import PostMessageForm from "./PostMessageForm";
 
 const styles = theme => ({
@@ -103,4 +104,4 @@ const mapactiontoprops = {
     deletepostmessages : actions.Delete
 }
 
-export default connect(mapstatetoprops, mapactiontoprops)(withStyles(styles)(PostMessages));
+export default connect(mapstatetoprops, mapactiontoprops) (PostMessages);

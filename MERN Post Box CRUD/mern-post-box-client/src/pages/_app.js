@@ -1,10 +1,18 @@
+//import '@/styles/globals.css'
+
+//export default function App({ Component, pageProps }) {
+//  return <Component {...pageProps} />
+//}
+
 // Responsible for the default view of the application
 // Displays the retrieve and render all of the Records we insterted when doing HTTP request using postman.
 
 import React from "react";
 import './App.css';
+import './index.css';
 import PostMessages from "./components/PostMessages";
-import { Container, Typography, AppBar } from "@material-ui/core";
+import { Container, Typography, AppBar } from "@mui/material";
+import "@emotion/react";
 
 // Refers to `store.js`
 import { Provider } from "react-redux"; 
