@@ -2,7 +2,7 @@ FROM node
 
 WORKDIR /containerapp
 
-COPY . /app
+COPY ./MERN Post Box CRUD/mern-stack-api/  /containerapp
 
 RUN npm install
 
